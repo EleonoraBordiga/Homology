@@ -126,8 +126,10 @@ end
 
 K = SimplicialComplex((Set([0,1,2]),Set([1,2,3])))
 B = dp(K,2)
-
 A = dp(K,1)
+
+simultaneousReduce(A,B)
+rowReducing(B)
 
 # Funzione che conta il numero di colonne non nulle di una matrice A.
 
